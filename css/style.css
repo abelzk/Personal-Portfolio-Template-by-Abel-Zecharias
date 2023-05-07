@@ -341,15 +341,15 @@ hr {
 .tp-ag{
   text-align: left;
   display: flex;
-  justify-content: space-around;
-  
+  justify-content: space-evenly;
+  background-color: #202020;
   color: #485696;
 }
 .tp-nm{
+  background-color: #545353;
   font-weight: 500;
-  width: 90%;
   text-align: right;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
 }
