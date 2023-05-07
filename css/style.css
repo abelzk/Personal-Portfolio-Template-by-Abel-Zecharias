@@ -7,10 +7,10 @@ body {
   scroll-behavior: smooth;
   font-size: small;
   font-family: "inter", sans-serif;
-  /* background-image: url('/img/Whangaehu.png'); */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
+  background-position: 1px;
+  background-size: 30px;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+
 }
 
 .loader-bgs {
@@ -152,6 +152,7 @@ hr {
   width: 100%;
   height: 0.5px;
   background-color: rgba(128, 128, 128, 0.219);
+  opacity: 0;
   border: none;
 }
 
@@ -162,6 +163,8 @@ section {
 }
 
 .home {
+  /* background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
+  background-repeat: repeat; */
   width: 100%;
   height: 400px;
   display: flex;
