@@ -274,29 +274,82 @@ hr {
 .about-me {
   margin-top: 10%;
   display: flex;
+  justify-content: space-around;
+  align-content: center;
   gap: 20px;
-  background-color: antiquewhite;
+  margin-left: 40px;
+  margin-right: 40px;
   height: calc(100vh);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 
 }
 
-.ab-header {
-  margin: 0 0 0 40px;
-  height: 40px;
-  gap: 10px;
-  display: flex;
-}
-
-.ab-title h3{
-  margin: 0;
-  color: #485696;;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 50px;
-  text-align: left;
-}
 .details{
-  width: 70%;
+  width: 45%;
+  display: grid;
+  gap: 5;
+  align-content: flex-start;
+  font-family: "inter", sans-serif;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+.details #heading{
+  color: #485696;
+}
+.about-me .progress{
+  text-align: center;
+  width: 45%;
+  display: grid;
+  gap: 2px;
+  align-content: center;
+  border-radius: 15px;
+  font-family: "inter", sans-serif;
+  font-weight: 600;
+  height: 80px;
+  margin-top: 15px;
+  background-color: rgba(247, 246, 246, 0.679);
+}
+.progress .numbers{
+  font-size: 24px;
+  color: #485696;
+  font-weight: 600;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
 }
 
+.progress .texts{
+  color: #131313;
+  font-weight: 500;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.info{
+  background-color: #c2c2c250;
+  border-radius: 8px;
+  height: 50px;
+  display: grid;
+ align-content: center;
+ align-items: center;
+
+  
+}
+.tp-ag{
+  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  
+  color: #485696;
+}
+.tp-nm{
+  font-weight: 500;
+  width: 90%;
+  text-align: right;
+  display: flex;
+  justify-content: space-around;
+
+}
