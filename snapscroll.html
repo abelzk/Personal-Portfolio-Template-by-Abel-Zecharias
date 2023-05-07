@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        overflow: hidden;
+    }
+div {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    
+}
+div > section{
+    background-color: #f22c2c;
+    height: 100vh;
+    display: flex;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+}
+div > section:nth-child(even) {
+  background-color: #485696;
+}
+
+</style>
+<body>
+    <div class="container">
+        <section class="child"></section>
+        <section class="child"></section>
+        <section class="child"></section>
+      </div>
+</body>
+</html>
