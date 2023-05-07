@@ -174,9 +174,9 @@ section {
 }
 
 .img {
-  /* -webkit-box-shadow: 0px 0px 300px 187px rgba(255, 46, 46, 0.583);
-  -moz-box-shadow: 0px 0px 300px 300px rgba(130, 46, 255, 0.12);
-  box-shadow: 0px 0px 300px 187px rgba(255, 241, 46, 0.392); */
+  -webkit-box-shadow: 0px 0px 300px 187px rgba(255, 46, 46, 0.423);
+  -moz-box-shadow: 0px 0px 300px 300px rgba(130, 46, 255, 0.2);
+  box-shadow: 0px 0px 300px 187px rgba(255, 213, 46, 0.207);
   margin: 0 25% 0 25%;
   width: 150px;
   height: 150px;
