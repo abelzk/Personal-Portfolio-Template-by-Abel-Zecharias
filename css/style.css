@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
 
 body {
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  overflow-y: auto;
+  scroll-behavior: smooth;
   font-size: small;
   font-family: "inter", sans-serif;
+  /* background-image: url('/img/Whangaehu.png'); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC");
 }
 
-.loader-bg {
+.loader-bgs {
   background-color: white;
   position: fixed;
   z-index: 1;
@@ -21,11 +22,11 @@ body {
   height: calc(100% + 300px);
 }
 
-.loader {
+.loaders {
   border: 0 solid transparent;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   top: calc(50vh - 75px);
   left: calc(50vw - 75px);
@@ -67,7 +68,6 @@ body {
 
 header .logo-nav h2 {
   color: rgb(41, 41, 41);
-  /* font-family: 'Gajraj One', cursive; */
   font-family: "Pacifico", cursive;
 }
 
@@ -118,7 +118,7 @@ header .menu a:after {
   content: "";
   position: absolute;
   background-color: black;
-  height: 3.5px;
+  height: 2px;
   border-radius: 5px;
   width: 0;
   left: 0;
@@ -127,7 +127,6 @@ header .menu a:after {
   margin: 0;
   box-sizing: border-box;
   background-color: #485696;
-  /* background-color: #016fb9; */
 }
 
 header .menu a:hover:after {
@@ -135,11 +134,9 @@ header .menu a:hover:after {
   transition: all 0.3s ease-in-out;
 }
 
-header .menu ul,
-a,
-li:hover {
+a:hover {
   transition: color 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
-  color: #485696;
+  color: #485696
 }
 
 #dot {
@@ -159,7 +156,7 @@ hr {
 }
 
 section {
-  height: 100vh;
+  height: calc(100vh - 10em);
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
@@ -176,9 +173,9 @@ section {
 }
 
 .img {
-  -webkit-box-shadow: 0px 0px 300px 187px rgba(255, 46, 46, 0.583);
+  /* -webkit-box-shadow: 0px 0px 300px 187px rgba(255, 46, 46, 0.583);
   -moz-box-shadow: 0px 0px 300px 300px rgba(130, 46, 255, 0.12);
-  box-shadow: 0px 0px 300px 187px rgba(255, 241, 46, 0.392);
+  box-shadow: 0px 0px 300px 187px rgba(255, 241, 46, 0.392); */
   margin: 0 25% 0 25%;
   width: 150px;
   height: 150px;
@@ -215,7 +212,6 @@ section {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0.5px;
   color: grey;
-  /* font-weight: 400; */
 }
 .about #motto {
   font-style: italic;
@@ -231,15 +227,12 @@ section {
 .arrow,
 .arrow:before {
   position: absolute;
-  /* left: 50%; */
 }
 
 .arrow {
   margin-top: 20px;
   width: 30px;
   height: 30px;
-  /* top: 50%; */
-  /* margin: -20px 0 0 -20px; */
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -253,8 +246,6 @@ section {
   content: "";
   width: 20px;
   height: 20px;
-  /* top: 50%; */
-  /* margin: -10px 0 0 -10px; */
   border-left: none;
   border-top: none;
   border-right: 1px #545353 solid;
