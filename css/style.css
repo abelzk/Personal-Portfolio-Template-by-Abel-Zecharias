@@ -342,11 +342,11 @@ hr {
   text-align: left;
   display: flex;
   justify-content: space-evenly;
-  background-color: #202020;
   color: #485696;
 }
 .tp-nm{
-  background-color: #545353;
+  text-align: left;
+
   font-weight: 500;
   text-align: right;
   display: flex;
